@@ -1,6 +1,10 @@
 @import './vars';
 @import './fonts';
-@import './custom-select';
+@import './sections/personal-info';
+@import './sections/experience';
+@import './sections/about';
+@import './sections/js';
+@import './custom-ui/custom-select';
 
 *{
     box-sizing: border-box;
@@ -30,22 +34,25 @@ h1{
     letter-spacing: 5px;
     margin-top:130px;
 }
+h2.section-caption{
+    font-size:30px;
+    font-weight: 500;
+    margin:30px 0  45px 0;
+    line-height: 1;
+    letter-spacing: 1.1;
+}
 
 a{
     color:$link-color;
 }
 
-p.section-caption{
-    font-size:30px;
-    letter-spacing: 1.5px;
-
-}
 section{
     width:100%;
     display:flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    margin-bottom:75px;
 }
 
 header{
@@ -62,89 +69,8 @@ nav a{
     text-decoration: none;
 }
 
-nav .active{
+.active{
     color:$text-main-color;
 }
 
-.personal-info{
-    margin-top:75px;
-}
-.personal-info-icon, .experience-icon, .javascript-icon, .about-icon{
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 30px;
-}
 
-.personal-info p{
-    margin-bottom:65px;
-}
-
-.personal-info form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:100%;
-}
-.personal-info .form-row{
-    width:100%;
-    max-width: 525px;
-    text-align: center;
-    margin-bottom:25px;
-
-    position: relative;
-}
-
-.personal-info input, .personal-info select {
-    width: 100%;
-    height:60px;
-    border:1px solid #d9d9d9;
-    font-size:20px;
-    color:$text-main-color;
-    text-align: center;
-    caret-color:$text-main-color;
-    padding-top:10px;
-}
-.personal-info input:focus{
-    border-color: $link-color;
-}
-
-.personal-info input:focus ~ .floating-label,
-.personal-info input:not(:focus):valid ~ .floating-label{
-  top: 8px;
-  bottom: 10px;
-  left: 0;
-  font-size:14px;
-  opacity: 1;
-}
-
-.floating-label {
-  position: absolute;
-  pointer-events: none;
-  left: 0;
-  top: 15px;
-  width:100%;
-  transition: 0.2s ease all;
-  font-family: 'Roboto Regular';
-  font-size: 24px;
-  color:#c8c8c8;
-}
-
-.personal-info select{
-    width:320px;
-    appearance: none;
-    overflow-y: scroll;
-    text-align: center;
-    text-align-last: center;
-}
-
-.personal-info option{
-    padding-left:30px;
-}
-  
-.option{
-    font-size:24px;
-    color:red;
-    text-align: center;
-}

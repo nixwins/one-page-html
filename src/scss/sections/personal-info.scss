@@ -1,0 +1,65 @@
+.personal-info{
+    margin-top:75px;
+}
+.personal-info-icon, .experience-icon, .javascript-icon, .about-icon{
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    // margin-bottom: 30px;
+}
+
+.personal-info p{
+    margin-bottom:65px;
+}
+
+.personal-info form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    justify-content: center;
+}
+.personal-info .form-row{
+    width:100%;
+    max-width: 525px;
+    text-align: center;
+    margin-bottom:25px;
+
+    position: relative;
+}
+
+.personal-info input, .personal-info select {
+    width: 100%;
+    height:60px;
+    border:1px solid #d9d9d9;
+    font-size:20px;
+    color:$text-main-color;
+    text-align: center;
+    caret-color:$text-main-color;
+    padding-top:10px;
+}
+.personal-info input:focus{
+    border-color: $link-color;
+}
+
+.personal-info input:focus ~ .floating-label,
+.personal-info input:not(:focus):valid ~ .floating-label{
+  top: 8px;
+  bottom: 10px;
+  left: 0;
+  font-size:14px;
+  opacity: 1;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 15px;
+  width:100%;
+  transition: 0.2s ease all;
+  font-family: 'Roboto Regular';
+  font-size: 24px;
+  color:#c8c8c8;
+}

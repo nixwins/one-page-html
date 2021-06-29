@@ -33,7 +33,7 @@
                 <a href="#" class="personal-info-icon">
                     <img src="/assets/img/personal-info-icon.png" />
                 </a>
-                <p class="section-caption">Личная информация</p>
+                <h2 class="section-caption">Личная информация</h2>
 
                 <form>
                     <div class="form-row">
@@ -59,20 +59,6 @@
                                 <div class="select-item">1989</div>
                             </div>
                         </div>
-                        <!-- <select name="age">
-                            <option selected disabled>Год рождения</option>
-                            <option class="option">1998</option>
-                            <option>1997</option>
-                            <option>1996</option>
-                            <option>1995</option>
-                            <option>1995</option>
-                            <option>1994</option>
-                            <option>1992</option>
-                            <option>1991</option>
-                            <option>1990</option>
-                            <option>1989</option>
-
-                        </select> -->
                     </div>
                     <div class="form-row">
                         <input type="text" name="address" required>
@@ -97,49 +83,58 @@
                 <a href="#" class="experience-icon">
                     <img src="/assets/img/experience-icon.png" />
                 </a>
-                <p class="section-caption">Расскажите о своем опыте</p>
+                <h2 class="section-caption">Расскажите о своем опыте</h2>
 
                 <form action="">
                     <div class="experience-item">
                         <div class="form-row">
-                            <label for="exp-bem">БЭМ/OOCSS</label>
+
                             <input type="checkbox" name="exp-bem" id="exp-bem">
+                            <label for="exp-bem">БЭМ/OOCSS</label>
                         </div>
                         <div class="form-row">
-                            <label for="exp-preprossor">Stylus/LESS/SASS</label>
+
                             <input type="checkbox" name="exp-preprossor" id="exp-preprossor">
+                            <label for="exp-preprossor">Stylus/LESS/SASS</label>
                         </div>
                         <div class="form-row">
-                            <label for="exp-svg">Работаю с SVG</label>
+
                             <input type="checkbox" name="exp-svg" id="exp-svg">
+                            <label for="exp-svg">Работаю с SVG</label>
                         </div>
                     </div>
                     <div class="experience-item">
                         <div class="form-row">
-                            <label for="exp-semantic">Верстаю семантично</label>
+
                             <input type="checkbox" name="exp-semantic" id="exp-semantic">
+                            <label for="exp-semantic">Верстаю семантично</label>
                         </div>
                         <div class="form-row">
-                            <label for="exp-js">ES2015/ES2016</label>
+
                             <input type="checkbox" name="exp-js" id="exp-js">
+                            <label for="exp-js">ES2015/ES2016</label>
                         </div>
                         <div class="form-row">
-                            <label for="exp-taskrunner">Gulp/GRUNT</label>
+
                             <input type="checkbox" name="" id="exp-taskrunner">
+                            <label for="exp-taskrunner">Gulp/GRUNT</label>
                         </div>
                     </div>
                     <div class="experience-item">
                         <div class="form-row">
-                            <label for="exp-webpack">Webpack</label>
+
                             <input type="checkbox" name="" id="exp-webpack">
+                            <label for="exp-webpack">Webpack</label>
                         </div>
                         <div class="form-row">
-                            <label for="exp-jquery">jQuery</label>
+
                             <input type="checkbox" name="" id="exp-jquery">
+                            <label for="exp-jquery">jQuery</label>
                         </div>
                         <div class="form-row">
-                            <label for="exp-git">Ипользую Git</label>
+
                             <input type="checkbox" name="" id="exp-git">
+                            <label for="exp-git">Ипользую Git</label>
                         </div>
                     </div>
                 </form>
@@ -149,7 +144,19 @@
                 <a href="#" class="javascript-icon">
                     <img src="/assets/img/js-icon.png" />
                 </a>
-                <p class="section-caption">Уровень владения JavaScript</p>
+                <h2 class="section-caption">Уровень владения JavaScript</h2>
+
+                <div class="js-level-description">
+                    <div>Не владею</div>
+                    <div>Использую готовые решения</div>
+                    <div>Использую готовые решения
+                        и умею и переделывать</div>
+                    <div>Пишу сложный JS с нуля</div>
+                </div>
+                <div class="slider-wrapper">
+                    <input id="volume" type="range" min="0" max="100" step="25" />
+                    <!-- <label class="visually-hidden" for="volume">Volume</label> -->
+                </div>
 
 
             </section>
@@ -158,19 +165,19 @@
                 <a href="#" class="about-icon">
                     <img src="/assets/img/about-icon.png" />
                 </a>
-                <p class="section-caption">Расскажите о себе</p>
+                <h2 class="section-caption">Расскажите о себе</h2>
                 <p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
 
                 <form>
                     <div class="form-row">
-                        <textarea placeholder="Like ...">
+                        <textarea placeholder="Понравилась тем, что...">  </textarea>
                     </div>
                     <div class="form-row">
                         <button class="btn-done">Готов</button>
                     </div>
-                    
 
-                    </textarea>
+
+
                 </form>
 
             </section>

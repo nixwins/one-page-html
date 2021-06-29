@@ -4,6 +4,10 @@
     font-family: 'Roboto Regular';
     font-size:24px;
     color:$text-secondary-color;
+    margin:0 auto;
+}
+.select.is-active .select-body{
+    display: block;
 }
 
 .select-header{
