@@ -1,0 +1,103 @@
+.levels {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+  
+  .level {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .level p {
+    font-size: 13px;
+    height: 3vw;
+    margin-bottom: 0.4vw;
+    display: flex;
+    align-items: flex-end;
+    &:first-letter{
+        text-transform: uppercase;
+    }
+  }
+  
+  
+  /* черточка */
+  
+  .level::after {
+    content: '';
+    height: 3vw;
+    width: 1px;
+    z-index: 1;
+  }
+  
+  
+  /* ширина промежутков */
+  
+  .level:nth-child(1) {
+    width: 20%;
+  }
+  
+  .level:nth-child(2) {
+    width: 25%;
+  }
+  
+  .level:nth-child(3) {
+    width: 30%;
+  }
+  
+  .level:nth-child(4) {
+    align-items: flex-end;
+    width: 25%;
+  }
+  
+  
+  /* градиент на черточках */
+  
+  .level:nth-child(1)::after {
+    background: linear-gradient(0deg, white 0%, white 22%, #BDBDBD 22%, #BDBDBD 100%);
+  }
+  
+  .level:nth-child(2)::after {
+    background: linear-gradient(0deg, white 0%, white 30%, #BDBDBD 30%, #BDBDBD 100%);
+  }
+  
+  .level:nth-child(3)::after {
+    background: linear-gradient(0deg, white 0%, white 40%, #BDBDBD 40%, #BDBDBD 100%);
+  }
+  
+  .level:nth-child(4)::after {
+    background: linear-gradient(0deg, white 0%, white 62%, #BDBDBD 62%, #BDBDBD 100%);
+  }
+  
+  .slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 15px;
+    width: 100%;
+    background-color: #BDBDBD;
+    clip-path: polygon(0 65%, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .progress {
+    height: 100%;
+    background: linear-gradient(45deg, #D1C4E9 0%, #4527A0 100%);
+    width:45%;
+  }
+  
+  .knob {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 0 1px #9E9E9E;
+    border-radius: 50% 10% 50% 50%;
+    z-index: 2;
+    transform: translateX(335.124px) rotate(
+        -45deg
+        );
+    // transform: translateX(335.124px) rotate(-45deg); transition: all 0.5s ease 0s;
+  }

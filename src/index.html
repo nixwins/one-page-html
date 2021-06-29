@@ -19,6 +19,10 @@
                 <a href="#js">Javascript</a>
                 <a href="#about">О себе</a>
             </nav>
+            <div class="burger-menu">
+                <span></span>
+            </div>
+
         </div>
 
     </header>
@@ -26,9 +30,9 @@
     <div class="container">
         <div class="content">
 
-            <h1>Анкета</h1>
+            <h1 id="questionnaire">Анкета</h1>
 
-            <section class="personal-info">
+            <section class="personal-info" id="personal-info">
 
                 <a href="#" class="personal-info-icon">
                     <img src="/assets/img/personal-info-icon.png" />
@@ -37,7 +41,7 @@
 
                 <form>
                     <div class="form-row">
-                        <input type="text" name="fullname" required>
+                        <input type="text" name="fullname" required value="Жораев Досмухамбет Тулегенович">
                         <span class="floating-label">ФИО</span>
                     </div>
                     <div class="form-row">
@@ -61,15 +65,15 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <input type="text" name="address" required>
+                        <input type="text" name="address" required value="Петропавловск">
                         <span class="floating-label">Место проживания</span>
                     </div>
                     <div class="form-row">
-                        <input type="text" name="skype" required>
+                        <input type="text" name="skype" required value="proger2010(nixwins)">
                         <span class="floating-label">Skype</span>
                     </div>
                     <div class="form-row">
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" required value="halaulilau@gmail.com">
                         <span class="floating-label">E-mail</span>
                     </div>
                 </form>
@@ -79,7 +83,7 @@
             </section>
 
 
-            <section class="experience">
+            <section class="experience" id="experience">
                 <a href="#" class="experience-icon">
                     <img src="/assets/img/experience-icon.png" />
                 </a>
@@ -94,24 +98,24 @@
                         </div>
                         <div class="form-row">
 
-                            <input type="checkbox" name="exp-preprossor" id="exp-preprossor">
+                            <input type="checkbox" name="exp-preprossor" id="exp-preprossor" checked>
                             <label for="exp-preprossor">Stylus/LESS/SASS</label>
                         </div>
                         <div class="form-row">
 
-                            <input type="checkbox" name="exp-svg" id="exp-svg">
+                            <input type="checkbox" name="exp-svg" id="exp-svg" checked>
                             <label for="exp-svg">Работаю с SVG</label>
                         </div>
                     </div>
                     <div class="experience-item">
                         <div class="form-row">
 
-                            <input type="checkbox" name="exp-semantic" id="exp-semantic">
+                            <input type="checkbox" name="exp-semantic" id="exp-semantic" checked>
                             <label for="exp-semantic">Верстаю семантично</label>
                         </div>
                         <div class="form-row">
 
-                            <input type="checkbox" name="exp-js" id="exp-js">
+                            <input type="checkbox" name="exp-js" id="exp-js" checked>
                             <label for="exp-js">ES2015/ES2016</label>
                         </div>
                         <div class="form-row">
@@ -123,45 +127,56 @@
                     <div class="experience-item">
                         <div class="form-row">
 
-                            <input type="checkbox" name="" id="exp-webpack">
+                            <input type="checkbox" name="" id="exp-webpack" checked>
                             <label for="exp-webpack">Webpack</label>
                         </div>
                         <div class="form-row">
 
-                            <input type="checkbox" name="" id="exp-jquery">
+                            <input type="checkbox" name="" id="exp-jquery" checked>
                             <label for="exp-jquery">jQuery</label>
                         </div>
                         <div class="form-row">
 
-                            <input type="checkbox" name="" id="exp-git">
+                            <input type="checkbox" name="" id="exp-git" checked>
                             <label for="exp-git">Ипользую Git</label>
                         </div>
                     </div>
                 </form>
             </section>
 
-            <section class="javascirpt">
+            <section class="javascirpt" id="js">
                 <a href="#" class="javascript-icon">
                     <img src="/assets/img/js-icon.png" />
                 </a>
                 <h2 class="section-caption">Уровень владения JavaScript</h2>
 
-                <div class="js-level-description">
-                    <div>Не владею</div>
-                    <div>Использую готовые решения</div>
-                    <div>Использую готовые решения
-                        и умею и переделывать</div>
-                    <div>Пишу сложный JS с нуля</div>
-                </div>
-                <div class="slider-wrapper">
-                    <input id="volume" type="range" min="0" max="100" step="25" />
-                    <!-- <label class="visually-hidden" for="volume">Volume</label> -->
-                </div>
+                <div class="levels">
+                    <div class="level">
+                        <p>Не владею</p>
+                    </div>
 
+                    <div class="level">
+                        <p>Использую готовые <br> решения
+                        </p>
+                    </div>
 
+                    <div class="level">
+                        <p>Использую готовые решения <br> и умею переделывать</p>
+                    </div>
+
+                    <div class="level">
+                        <p>Пишу сложный js с нуля</p>
+                    </div>
+
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="knob"></div>
+                </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <a href="#" class="about-icon">
                     <img src="/assets/img/about-icon.png" />
                 </a>
@@ -170,7 +185,8 @@
 
                 <form>
                     <div class="form-row">
-                        <textarea placeholder="Понравилась тем, что...">  </textarea>
+                        <textarea placeholder="Понравилась тем, что...">Понравилась тем, что буду заниматся версткой. И я хочу прокачать свою верстку.    
+                        </textarea>
                     </div>
                     <div class="form-row">
                         <button class="btn-done">Готов</button>
@@ -181,7 +197,6 @@
                 </form>
 
             </section>
-
 
         </div>
 
