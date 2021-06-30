@@ -28,6 +28,33 @@
 .select-icon{
     text-align: center;
     width: 10%;
+    position:relative;
+}
+.select-icon:before, .select-icon:after{
+    content:'';
+    width:10px;
+    height:2px;
+    background-color: $link-color;
+    position:absolute;
+}
+.select-icon:before{
+    top:0;
+    left:10px;
+    transform:rotate(45deg);
+    transition: all 0.3s ease 0s;
+}
+.select-icon:after{
+    transform:rotate(-45deg);
+    transition: all 0.3s ease 0s;
+}
+
+.select-icon.is-active::before{
+    transform:rotate(135deg)
+}
+
+.select-icon.is-active::after{
+    transform:rotate(-135deg);
+    right:5px;
 }
 
 .select-body{
