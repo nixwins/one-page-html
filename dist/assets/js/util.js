@@ -1,0 +1,1 @@
+export const domQuery=e=>document.querySelector(e);export const domQueryAll=e=>document.querySelectorAll(e);

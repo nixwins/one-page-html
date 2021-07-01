@@ -1,0 +1,1 @@
+import{domQuery}from"../util";import{domQueryAll}from"../util";export const BurgerMenu=()=>{const e=domQuery(".burger-menu"),t=domQuery("nav");domQueryAll("nav a").forEach((r=>{r.addEventListener("click",(()=>{e.classList.remove("active"),t.classList.remove("active")}))})),e.addEventListener("click",(()=>{e.classList.toggle("active"),t.classList.toggle("active")}))};

@@ -23,7 +23,6 @@ const conf = {
         filename: `${PATHS.jsDir}/[name].js`,
         clean: true,
         publicPath: '/',
-
     },
 
     // target: process.env.NODE_ENV === "development" ? "web" : "browserslist",
@@ -131,7 +130,8 @@ const conf = {
                 loader: 'file-loader',
                 exclude: '/node_modules/',
                 options: {
-                    name: '[name].[ext]'
+                    name: '[name].[ext]',
+                    outputPath: PATHS.fontDir
                 }
             },
 

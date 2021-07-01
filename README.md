@@ -1,2 +1,19 @@
-# webpack5-skeleton
- Webpack5 skeleton. HTML/CSS/SCSS/PostCSS/JS/Static/Fonts
+# one page верстка
+## install
+
+```javascript
+git clone https://github.com/nixwins/one-page-html.git
+npm install
+```
+
+## run
+```javascript
+npm run dev
+
+```
+
+## build
+
+```javascript
+npm run build
+```

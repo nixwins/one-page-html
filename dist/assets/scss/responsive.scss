@@ -1,0 +1,122 @@
+@media screen and (max-width:960px){
+    .experience form{
+        justify-content: center;
+    }
+    .experience-item{
+        margin-right:10px;
+    }
+}
+@media screen and (max-width:768px){
+    h2.section-caption{
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+    header{
+        height:50px;
+        display:flex;
+        position: relative;
+        .content{
+            position: fixed;
+            z-index: 9999;
+        }
+
+    }
+    .burger-menu{
+        display:block;
+        position: relative;
+        width:30px;
+        height:20px;
+        z-index: 9999;
+        // background-color: orange;
+    }
+    .burger-menu:before, .burger-menu:after{
+        content:'';
+        background-color: #000;
+        position:absolute;
+        width:100%;
+        height:2px;
+        transition: all 0.3s ease 0s;
+
+    }
+    .burger-menu:before{
+        top:0;
+    }
+    .burger-menu:after{
+        bottom:0;
+    }
+    .burger-menu span{
+        background-color: #000;
+        position:absolute;
+        width:100%;
+        height:2px;
+        top:9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    nav{
+        display:block;
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:-100%;
+        left: 0;
+        background-color: $text-secondary-color;
+        padding:80px 0 0 0;
+        z-index: 999;
+        a{
+            display:block;
+            padding:10px 0 20px 0;
+            
+        }
+    }
+    nav.active{
+        top: 0;
+    }
+
+
+    .burger-menu.active::before{
+        transform:rotate(45deg);
+        top:9px;
+    }
+    .burger-menu.active::after{
+        transform:rotate(-45deg);
+        bottom:9px;
+        
+    }
+
+    .burger-menu.active span{
+        height: 0;
+    }
+    
+    .form-row, .levels{
+        z-index: auto;
+    }
+    .levels{
+        padding: 0 0 0 0;
+    }
+
+    
+}
+
+@media screen and (max-width:580px){
+    .experience-item{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        max-width:100%;
+        margin-bottom:10px;
+
+        .form-row{
+            justify-content:flex-start;
+        }
+    }
+    .about{
+        form{
+            width:100%;
+            margin:20px auto;
+        }
+        textarea{
+            width:100%;
+        }
+    }
+}
