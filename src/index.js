@@ -1,7 +1,7 @@
-import { Select, Slider, BurrgerMenu } from './js/app';
+import { Select, Slider, BurgerMenu } from './js/app';
 import './scss/main.scss';
 
-BurrgerMenu();
+BurgerMenu();
 Select();
 
 Slider();
